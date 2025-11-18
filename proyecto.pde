@@ -1,7 +1,7 @@
-Jugador j1 = new Jugador(100,100);
+Jugador j1 = new Jugador(50,50);
 ElapsedMillis time_handler = new ElapsedMillis();
-
-
+Floor f1 = new Floor(100,100,100,100);
+World1 wor1 = new World1();
 void keyPressed(){
   j1.buton_pressed_handler();
 
@@ -23,5 +23,5 @@ void draw(){
   //println(print_time);
   time_handler.restart();
   j1.draw();
- 
+  wor1.draw();
 }
